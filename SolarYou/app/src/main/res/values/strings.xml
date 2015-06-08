@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SolarYou</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="ref_planet">Reference Planet:</string>
+    <string name="des_planet">Desired Planet:</string>
+    <string name="des_planet_hint">Enter A Number Here</string>
+    <string name="from_textview">From:</string>
+    <string name="to_textview">To:</string>
+    <string name="in_textview">In </string>
+    <string name="year">Years</string>
+
+</resources>
