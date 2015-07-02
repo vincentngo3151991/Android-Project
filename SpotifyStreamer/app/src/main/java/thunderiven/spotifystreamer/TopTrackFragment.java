@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -43,12 +44,17 @@ public class TopTrackFragment extends Fragment {
     private String mArtistName;
     private ListView mListView;
     private TrackAdapter mTrackAdapter;
+    private TracksSingleton mTracksSingleton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
         setHasOptionsMenu(true);
+
+        // Create an instance of TracksSingleton
+        mTracksSingleton= TracksSingleton.get(getActivity());
+
         Intent i=getActivity().getIntent();
         mArtistId=i.getStringExtra(ARTIST_ID_EXTRA);
         mArtistName=i.getStringExtra(ARTIST_NAME_EXTRA);
@@ -68,6 +74,14 @@ public class TopTrackFragment extends Fragment {
         mListView=(ListView)v.findViewById(R.id.top_ten_tracks_listview);
         mListView.setEmptyView(emptyView);
         mListView.setAdapter(mTrackAdapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i=new Intent(getActivity(),TrackPlayerActivity.class);
+                i.putExtra(TrackPlayerFragment.TRACK_LOCATION,position);
+                startActivity(i);
+            }
+        });
         return v;
     }
 
@@ -121,6 +135,9 @@ public class TopTrackFragment extends Fragment {
             for (Track track:tracks) {
                 mTrackAdapter.add(track);
             }
+
+            // Update the TracksSingleton to contain the new tracks
+            mTracksSingleton.updateTracks(tracks);
         }
     }
 

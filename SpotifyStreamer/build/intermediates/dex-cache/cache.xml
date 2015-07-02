@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\libs\spotify-web-api-android-all-0.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="76cd5868e65f36963bbcddd42125eae7de32da3f">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\spotify-web-api-android-all-0.1.0-771c0b398b6a2b327ce1f96dc7e0352cf1533f16.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vincent Ngo\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-9ff01c76f50d48a624932b1a7c43becb9d529d14.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vincent Ngo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-cf60dc4297ddc954b31a98d7a6a222b78ae71087.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\classes-aea32f5d8d6fad9a83516b1a3e5b83c80205308a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\classes-1483ac48fd59b6aad5800666bebb4c2b2811dbb0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\Vincent Ngo\Dropbox\Android\Android Projects\SpotifyStreamer\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-cfb1550448fa8f50b187d984ea82b3af88880e0d.jar" />
+    </item>
+
+</items>

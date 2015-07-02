@@ -11,6 +11,10 @@
     <string name="no_result_found">No Search Result Found</string>
     <string name="title_activity_top_track">TopTrack</string>
 
+    <string name="prev_button">Previous</string>
+    <string name="play_button">Play</string>
+    <string name="next_button">Next</string>
+
     <!-- Toast-->
     <string name="no_artist_toast">Artist name not found, please refine search.</string>
 </resources>

@@ -3,6 +3,7 @@ package thunderiven.spotifystreamer;
 import java.util.List;
 
 import kaaes.spotify.webapi.android.models.AlbumSimple;
+import kaaes.spotify.webapi.android.models.ArtistSimple;
 import kaaes.spotify.webapi.android.models.Image;
 import kaaes.spotify.webapi.android.models.Track;
 import kaaes.spotify.webapi.android.models.Tracks;
@@ -14,11 +15,15 @@ public class TrackParser {
     /* this class is used to get the name, album name, preview url, large and small thumbnail url
     * from a track. It contains public getter method and accept Track as an input
     * */
-
+    private String mArtistName;
     private String mName;
     private String mAlbumName;
     private String mPreviewUrl;
     private String mThumbnailLarge;
+
+    public String getArtistName() {
+        return mArtistName;
+    }
 
     public String getName() {
         return mName;
@@ -42,6 +47,18 @@ public class TrackParser {
 
     private String mThumbnailSmall;
     public TrackParser(Track track) {
+        List<ArtistSimple> artists=track.artists;
+        StringBuilder builder=new StringBuilder();
+        for (int i=0;i<artists.size();i++) {
+            builder.append(artists.get(i).name);
+            // Add comma to the artist list
+            if (artists.size()>1 || i!=artists.size()-1) {
+                builder.append(", ");
+            }
+        }
+
+        mArtistName=builder.toString();
+
         mName=track.name;
         mPreviewUrl=track.preview_url;
         AlbumSimple album=track.album;

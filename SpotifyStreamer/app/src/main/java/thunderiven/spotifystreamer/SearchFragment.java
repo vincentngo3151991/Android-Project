@@ -1,7 +1,6 @@
 package thunderiven.spotifystreamer;
 
 import android.app.Fragment;
-import android.app.ListFragment;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,7 +20,6 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -78,7 +76,7 @@ public class SearchFragment extends Fragment {
                 String mId=parser.getId();
                 String mName=parser.getName();
 
-                Intent intent=new Intent(getActivity(),TopTrack.class);
+                Intent intent=new Intent(getActivity(),TopTrackActivity.class);
                 intent.putExtra(TopTrackFragment.ARTIST_ID_EXTRA,mId);
                 intent.putExtra(TopTrackFragment.ARTIST_NAME_EXTRA,mName);
                 startActivity(intent);
